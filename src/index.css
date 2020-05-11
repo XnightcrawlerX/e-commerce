@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*------------------------------------------------------------*/
+/*styles for header*/
+*{
+  text-decoration: none;
+}
+.header{
+  height: 4vh;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.fa-bars{
+  display: inline-block;
+  font-size: 30px;
+  margin-left: -23vw;
+}
+.bar-menu{
+  position: absolute;
+  top:4.1vh;
+  left: 2vw;
+  width: 40vw;
+  height: 30vh;
+  background-color: white;
+  border: thin solid gray;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: .5vh;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.bar-menu-container-top{
+  position: relative;
+  border: thin solid black;
+  grid-area: 1;
+  align-content: center;
+}
+profileName{
+  position: absolute;
+  width: max-content;
+  left: 11vw;
+  
+}
+.bar-menu .bar-menu-container-top a{
+  color: dodgerblue;
+  font-size: 10px;
+  display: inline-block;
+  padding-right: 1.2vw;
+  margin-top:1.4vh;
+  background: none;
+}
+.bar-menu .bar-menu-container-top a:hover{
+  background: none;
+  color:  rgb(30, 184, 255);
+}
+.bar-menu a{
+  color: black;
+  padding-top: 1vh;
+  font-size: 20px;
+}
+.bar-menu a:hover{
+  background-color: #f1f1f1;
+}
+.logo{
+  color: blue;
+}
+/*Header right container*/
+.header-container-right{
+  margin-left: 17.7vw;
+  width: 15vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1vw;
+}
+.fa-user{
+  font-size: 20px;
+  margin-top: 1vh;
+  color: dodgerblue;
+}
+.fa-user:hover{
+  color: rgb(19, 102, 185);
+}
+.fa-shopping-cart{
+  font-size: 20px;
+  margin-top: 1vh;
+  color: dodgerblue;
+}
+.fa-shopping-cart:hover{
+  color: rgb(19, 102, 185);
+}
+
+
+.main{
+  height: 92.8vh;
+  border: thin solid black;
+  overflow: scroll;
+}
+.main-image-1{
+  height: 65vh;
+  background-image: url("https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+  background-position: center;
+  background-position-y: 0vh;
+  position: relative;
+}
+.main-content-container{
+  height: max-content;
+  width: 75vw;
+  margin-top: 20vh;
+  margin-left: 10vw;
+  position: absolute;
+  text-align: center;
+}
+.main-content-container .header{
+color:  blue;
+font-size: 40px;
+margin-left: 22vw;
+}
+.main-content-container a{
+  display: inline-block;
+  margin-right: 5vw;
+  background-color: dodgerblue;
+  border: thin solid black;
+}
+.main-content-container a:hover{
+  background-color: rgb(80, 162, 245);
+}
+.image-container-bottom{
+  border: thin solid black;
+  height: 70vh;
+  padding-top: 50vh;
+}
+.bottom-container-image1{
+  border: thin solid black;
+  text-align: center;
+  height: 20vh;
+  margin-top: -50vh;
+}
+/*Signup*/
+.signup-image{
+  margin-top: 5vh;
+  height: 20vh;
+  border: thin solid black;
+}
+.signup-container{
+  border: thin solid black;
+  margin-top: 2vh;
+  height: 60vh;
+  text-align: left;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.text{
+  font-size: 20px;
+}
+.signup-toggled{
+  position: absolute;
+  width: 100vw;
+  height: 93vh;
+  opacity: .7;
+  top:4vh;
+  background-color: black;
+  z-index: 1;
+  text-align: center;
+}
+.signup-toggled .fa-times{
+  margin-top: 2vh;
+  margin-left:85vw;
+  color: white;
+  font-size: 30px;
+}
+.fa-times:hover{
+  color: rgb(97, 97, 97);
+}
+.signup-toggled h3{
+  margin-top: 5vh;
+  color: white;
+}
+.signup-text{
+  margin-top: -1vh;
+  margin-left: 24.5vw;
+  color: white;
+  width: 50vw;
+  font-size: 10px;
+}
+.signup-container{
+  border: thin solid white;
+  height: 40vh;
+  margin-left: 24vw;
+  width: 50vw;
+  margin-top: 5vh;
+  text-align: center;
+}
+.signup-container .signup-text{
+  font-size: 20px;
+  margin-left: 0vw;
+  margin-top:1vh;
+}
+.signup-container .sign-in{
+  color: white;
+  margin-top: 32.5vh;
+  font-size: 11px;
+}
+.signup-container .sign-in a{
+  color: dodgerblue;
+  margin-left: 2vw;
+}
+.signup-container p{
+  color: white;
+}
+.login-toggled{
+  height: 45vh;
+  width: 60vw;
+  z-index: 1;
+  position: absolute;
+  left: 20vw;
+  top:20vh;
+  background-color: white;
+  font-size: 20px;
+  padding-top: 2vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.login-toggled .login-container{
+  margin-top: 3vh;
+  height: 35vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  text-align: left;
+}
+.login-toggled .fa-times{
+  position: absolute;
+  margin-left: 16vw;
+  margin-top: -.5vh;
+}
+.login-container label{
+  margin-top: 3vh;
+  padding-bottom: 5vh;
+  font-size: 13px;
+}
+.login-container input{
+  width: 35.5vw;
+  margin-top: .5vh;
+  margin-bottom: .5vh;
+}
+.checkbox{
+  margin-left: -16vw;
+}
+.checkbox-label{
+  position: absolute;
+  font-size: 13px;
+  margin-left: -14vw;
+  top:23.7vh;
+}
+.login-submit{
+  width: 39.6vw;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  height: 3.5vh;
+  border-radius: 5px;
+}
+.login-submit:hover{
+  background-color: rgb(80, 162, 245);
+}
+.forgot-password{
+  font-size: 11px;
+  margin-left: 19.5vw;
+  margin-top: .5vh;
+}
+.forgot-password a{
+  color: dodgerblue;
+}
+.forgot-password a:hover{
+  color: rgb(11, 77, 144);
+}
+
+/*Shop page*/
+.shop-container{
+  height: 92.8vh;
+}
+.scrolling-images{
+  border: thin solid black;
+  height: 20vh;
+}
+.fa-angle-right{
+  position: absolute;
+  left: 94vw;
+  top: 11vh;
+  font-size: 50px;
+  opacity: 0.1;
+  display: none;
+}
+.fa-angle-left{
+  position: absolute;
+  top: 11vh;
+  font-size: 50px;
+  opacity: 0.1;
+  display: none;
+}
+.scrolling-images:hover .fa-angle-right{
+  display: block;
+}
+.scrolling-images:hover .fa-angle-left{
+  display: block;
+}
+.filter-container{
+  border: thin solid black;
+  margin-top: 1vh;
+}
+.image-gallery{
+  border: thin solid black;
+  margin-top: 1vh;
+  height: 70vh;
+  overflow: scroll;
+}
+/*Popular page*/
+
+
+.footer{
+  background-color: blue;
+  border: thin solid black;
+}
